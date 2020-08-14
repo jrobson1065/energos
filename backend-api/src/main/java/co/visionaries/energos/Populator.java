@@ -21,14 +21,14 @@ public class Populator implements CommandLineRunner {
 
     public void run(String... args) throws Exception {
 
-        VisionBoard board1 = visionBoardFactory.createDefaultBoard("Education & Career Success");
+        VisionBoard board1 = visionBoardFactory.createDefaultBoard("Travel");
         visionBoardRepo.save(board1);
 
-        VisionBoard board2 = visionBoardFactory.createDefaultBoard("Finances & Purchases");
+        VisionBoard board2 = visionBoardFactory.createDefaultBoard("Dreams");
         visionBoardRepo.save(board2);
 
-        VisionBoard board3 = visionBoardFactory.createDefaultBoard("2020 Goals");
-        visionBoardRepo.save(board3);
+//        VisionBoard board3 = visionBoardFactory.createDefaultBoard("2020 Goals");
+//        visionBoardRepo.save(board3);
 
 
     }
