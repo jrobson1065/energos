@@ -5,7 +5,6 @@ import { addSideBarEventListeners } from "../eventListeners/sidebar.js";
 import { addDragAndDropEventListeners } from "../eventListeners/drag-and-drop.js";
 import { addEventListenersToTemplates } from "../eventListeners/templates.js";
 import { addSettingsEventListeners } from "../eventListeners/settings.js";
-import { updateImageBorderRadius } from "../apiHelpers/apiHelper-Images.js";
 
 export function renderVisionBoard(visionboard) {
   const containerBody = document.querySelector(".container-body");

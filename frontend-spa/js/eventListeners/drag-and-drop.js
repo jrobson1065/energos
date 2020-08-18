@@ -31,9 +31,10 @@ export function drag(el) {
 function drop(box) {
   const e = event;
   e.preventDefault();
-  if (box.firstChild) removePreviousElement(box);
   const data = e.dataTransfer.getData("elementID");
   const el = document.getElementById(data);
+
+  if (box.firstChild) removePreviousElement(box);
   box.appendChild(el);
   
   const boxId = e.target.id;
